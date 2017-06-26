@@ -336,112 +336,25 @@
       
         
           
-            <h1 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h1><ul>
-<li><h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><p>下载 <a href="https://git-for-windows.github.io/" target="_blank" rel="external">Git</a>，并安装</p>
-</li>
-<li><h2 id="安装-NodeJS"><a href="#安装-NodeJS" class="headerlink" title="安装 NodeJS"></a>安装 NodeJS</h2><p>下载 <a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>，并安装</p>
-</li>
-<li><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>全局安装 hexo</p>
-<p><code>$ npm install -g hexo</code></p>
-</li>
-</ul>
-<h1 id="搭建本地博客"><a href="#搭建本地博客" class="headerlink" title="搭建本地博客"></a>搭建本地博客</h1><ul>
-<li><h2 id="初始化-Hexo-文件夹"><a href="#初始化-Hexo-文件夹" class="headerlink" title="初始化 Hexo 文件夹"></a>初始化 Hexo 文件夹</h2><p>在任意文件夹下（如 E:\Hexo），右键，点击 Git Bash Here ，调出 Git 命令行，运行</p>
-<p><code>$ hexo init</code></p>
-</li>
-<li><h2 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h2><p><code>$ npm install</code></p>
-</li>
-<li><h2 id="本地查看"><a href="#本地查看" class="headerlink" title="本地查看"></a>本地查看</h2><ul>
-<li><h3 id="生成静态文件（public文件夹）"><a href="#生成静态文件（public文件夹）" class="headerlink" title="生成静态文件（public文件夹）"></a>生成静态文件（public文件夹）</h3><p><code>$ hexo generate</code></p>
-</li>
-<li><h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><p><code>$ hexo server</code></p>
-<p>在浏览器输入 localhost:4000 即可查看本地博客效果</p>
-<p><img src="images/hexo-hello-world.png" alt="hexo-hello-world"></p>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="部署到-GitHub"><a href="#部署到-GitHub" class="headerlink" title="部署到 GitHub"></a>部署到 GitHub</h1><ul>
-<li><h2 id="注册-GitHub-账号"><a href="#注册-GitHub-账号" class="headerlink" title="注册 GitHub 账号"></a>注册 GitHub 账号</h2><p>GitHub 官网：<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a></p>
-</li>
-<li><h2 id="创建页面仓库"><a href="#创建页面仓库" class="headerlink" title="创建页面仓库"></a>创建页面仓库</h2><p>仓库名要和账号对应<br>格式：yourname.github.io</p>
-<p><img src="images/create-github-page.png" alt="create github page"></p>
-</li>
-</ul>
-<ul>
-<li><h2 id="SSH-公钥配置"><a href="#SSH-公钥配置" class="headerlink" title="SSH 公钥配置"></a>SSH 公钥配置</h2><p>如果是第一次使用此 GitHub 账号，需要配置公钥<br>配置步骤查看文末参考博客</p>
-</li>
-<li><h2 id="配置站点-config-yml"><a href="#配置站点-config-yml" class="headerlink" title="配置站点 _config.yml"></a>配置站点 _config.yml</h2><p>根目录下的全局 _config.yml 文件</p>
-<p><img src="images/hexo-layout.png" alt="hexo layout"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment # 部署</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/hoxun/hoxun.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p><strong>注意：</strong></p>
-<blockquote>
-<p>冒号 “:” 后面有一个空格</p>
-<p>type 值自 3.0 版本后为 git，之前为 github</p>
-<p>repository: 刚刚创建的 github 仓库地址（repo == repository）</p>
-</blockquote>
-<p><strong>Error:</strong></p>
-<blockquote>
-<p><code>Error: remote: Permission to hoxun/hoxun.github.io.git denied to ...</code></p>
-<p>原因：一台电脑多个 GitHub 账号</p>
-<p>解决：把仓库地址换为 SSH 形式的地址</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">repository: git@github.com:Hoxun/Hoxun.github.io.git</div></pre></td></tr></table></figure>
-</blockquote>
-<p>更多 config 配置可查阅官方文档：<a href="https://hexo.io/docs/configuration.html" target="_blank" rel="external">https://hexo.io/docs/configuration.html</a></p>
-</li>
-</ul>
-<ul>
-<li><h2 id="Hexo-部署"><a href="#Hexo-部署" class="headerlink" title="Hexo 部署"></a>Hexo 部署</h2><p>生成静态文件</p>
-<p><code>$ hexo generate</code></p>
-<p>部署到线上仓库(.deploy_git 文件夹)</p>
-<p><code>$ hexo deploy</code></p>
-<p><strong>Error:</strong></p>
-<blockquote>
-<p><code>ERROR Deployer not found: git</code></p>
-<p>原因：缺少部署插件</p>
-<p>解决：安装插件。执行以下命令<br><code>$ npm install hexo-deployer-git --save</code><br>重新 deploy 即可</p>
-</blockquote>
-<p>以下提示说明部署成功：</p>
-<p><code>INFO Deploy done: git</code></p>
-</li>
-<li><h2 id="访问-GitHub-博客页面"><a href="#访问-GitHub-博客页面" class="headerlink" title="访问 GitHub 博客页面"></a>访问 GitHub 博客页面</h2><p>点击 GitHub 上项目 Settings，下滑，在 GitHub Pages，提示：</p>
-<p><code>Your site is published at https://hoxun.github.io/</code></p>
-<p>在浏览器访问：<a href="https://hoxun.github.io/" target="_blank" rel="external">https://hoxun.github.io/</a>，即可打开线上博客</p>
-</li>
-</ul>
-<h1 id="绑定独立域名"><a href="#绑定独立域名" class="headerlink" title="绑定独立域名"></a>绑定独立域名</h1><ul>
-<li><h2 id="将独立域名与-GitHub-Pages-的空间绑定"><a href="#将独立域名与-GitHub-Pages-的空间绑定" class="headerlink" title="将独立域名与 GitHub Pages 的空间绑定"></a>将独立域名与 GitHub Pages 的空间绑定</h2><p>在本地 source 文件夹下，新建一个名为 CNAME 的文件，里面写入要绑定的域名（比如 hoxun.me），重新部署。</p>
-</li>
-<li><h2 id="DNS设置"><a href="#DNS设置" class="headerlink" title="DNS设置"></a>DNS设置</h2><p>在 DNSpod 平台或其他购买域名的平台进入到域名解析界面</p>
-<p><img src="images/dns-setting.png" alt="DNS Setting"></p>
-<p>CNAME 类型的记录值指向 GitHub 注册的仓库名（hoxun.github.io）<br>A 类型的记录值指向的 IP 地址是 GitHub Pages 提供的 IP</p>
-<p><strong>查看 GitHub Pages 提供的 IP 的方法：</strong></p>
-<p>在命令行运行：</p>
-<p><code>ping hoxun.github.io</code></p>
-<p><em>GitHub Pages 提供的 IP 会改变，为保障独立域名的正常访问，要及时修改 DNS 解析的 IP 地址</em></p>
-</li>
-</ul>
-<hr>
-<h1 id="Hexo-常用命令"><a href="#Hexo-常用命令" class="headerlink" title="Hexo 常用命令"></a>Hexo 常用命令</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$ hexo help # 查看帮助</div><div class="line">$ hexo init # 初始化</div><div class="line">$ hexo new [post] &lt;fileName&gt; # 新建文章</div><div class="line">$ hexo new page &lt;fileName&gt; # 新建页面</div><div class="line">$ hexo new draft &lt;fileName&gt; # 新建草稿</div><div class="line">$ hexo publish &lt;fileName&gt; # 发表草稿（render_drafts: true || false # 是否显示草稿，config 中的配置）</div><div class="line">$ hexo generate # 生成网页文件，public 文件夹</div><div class="line">$ hexo server # 开启本地服务 http://localhost:4000</div><div class="line">$ hexo deploy # 部署到线上仓库（.deploy_git 文件夹）</div><div class="line">$ hexo clean # 清除缓存文件（db.json）和已生成的静态文件（public 文件夹）</div></pre></td></tr></table></figure>
-<p><strong>简写</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo n == hexo new</div><div class="line">hexo g == hexo generate</div><div class="line">hexo s == hexo server</div><div class="line">hexo d == hexo deploy</div></pre></td></tr></table></figure>
-<h1 id="Another"><a href="#Another" class="headerlink" title="Another"></a>Another</h1><ol>
-<li>自行替换文章中的 <strong>hoxun</strong> 为你喜欢的名字；</li>
-<li>命令行最好使用 Node.js 或 Git 命令行，不要使用 Windows 自带的 cmd；</li>
-<li>博客正文使用 <a href="http://www.markdown.cn/" target="_blank" rel="external">Markdown</a> 语法书写；</li>
-<li>图床推荐使用 <a href="https://portal.qiniu.com/create" target="_blank" rel="external">七牛云存储</a>，有 10G 免费空间；</li>
-<li>我使用的 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，主题相关配置可查看官网文档</li>
-<li><a href="http://www.jianshu.com/p/86557c34b671" target="_blank" rel="external">Hexo Seo优化让你的博客在google搜索排名第一</a>；</li>
-<li><a href="http://www.arao.me/2015/hexo-next-theme-optimize-base/#hexo_NexT主题首页title的优化" target="_blank" rel="external">动动手指，NexT主题与Hexo更搭哦（基础篇）</a>；</li>
-</ol>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
-<li><a href="http://wuxiaolong.me/2015/07/31/build-blog-by-hexo/" target="_blank" rel="external">手把手教你建github技术博客by hexo</a></li>
-<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">hexo你的博客</a></li>
-<li><a href="http://www.cnblogs.com/liyan-web/p/5829268.html" target="_blank" rel="external">更换github账号后，push被旧账号阻止</a></li>
-<li><a href="https://hexo.io/" target="_blank" rel="external">Hexo 官网</a></li>
-</ul>
+          搭建环境
+安装 Git下载 Git，并安装
 
-          
+安装 NodeJS下载 Node.js，并安装
+
+安装 Hexo全局安装 hexo
+$ npm install -g hexo
+
+
+搭建本地博客
+初始化 Hexo 文件夹在任意文件夹下（如 E:\Hexo），右键，点击 Git Bash Here ，调出
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/42385/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -573,17 +486,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/4a17b156/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
