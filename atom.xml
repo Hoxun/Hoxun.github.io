@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hoxun.me/"/>
-  <updated>2017-06-26T16:28:45.569Z</updated>
+  <updated>2017-06-26T11:44:24.863Z</updated>
   <id>http://hoxun.me/</id>
   
   <author>
@@ -14,24 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://hoxun.me/posts/1/"/>
-    <id>http://hoxun.me/posts/1/</id>
-    <published>2017-06-26T16:28:44.085Z</published>
-    <updated>2017-06-26T16:28:45.569Z</updated>
-    
-    <content type="html"><![CDATA[google-site-verification: googledbbbffcf3b81f941.html]]></content>
-    
-    <summary type="html">
-    
-      google-site-verification: googledbbbffcf3b81f941.html
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>GitHub + Hexo 搭建个人博客</title>
