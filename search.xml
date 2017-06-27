@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[GitHub + Hexo + NexT 个人博客配置]]></title>
+    <url>%2Fposts%2F7070%2F</url>
+    <content type="text"><![CDATA[本文主要记录了本站所进行的配置博主使用的是 NexT 主题，可以选择自己喜欢的 主题，但本文配置不保证其他主题适用; 文中：站点配置文件 是根目录下的 _config.yml 文件主题配置文件 是主题目录下的 _config.yml 文件 安装 NexT 主题下载 NexT 主题NexT 主题源码 打开文件夹：your_dir/themes，在文件夹内右键，点击 Git Bash Here，调出 Git 命令行；运行： $ git clone https://github.com/iissnan/hexo-theme-next.git 启用 NexT 主题将下载的文件夹重命名为 NexT，修改 站点配置文件 的 theme 默认值 landscape 为 NexT 1234# Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: NexT 重启服务器（$ hexo s），在浏览器地址栏输入 localhost:4000 就可看到 NexT 主题应用成功 配置 NexT 主题主题版式 NexT 目前提供了三种排版样式，可通过修改 主题配置文件 选择你喜欢的板式 1234# Schemes# scheme: Muse# scheme: Mistscheme: Pisces]]></content>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[GitHub + Hexo 搭建个人博客]]></title>
+    <url>%2Fposts%2F42385%2F</url>
+    <content type="text"><![CDATA[搭建环境 安装 Git下载 Git，并安装 安装 NodeJS下载 Node.js，并安装 安装 Hexo全局安装 hexo $ npm install -g hexo 搭建本地博客 初始化 Hexo 文件夹在任意文件夹下（如 E:\Hexo），右键，点击 Git Bash Here ，调出 Git 命令行，运行 $ hexo init 安装依赖包$ npm install 本地查看 生成静态文件（public文件夹）$ hexo generate 运行服务器$ hexo server 在浏览器输入 localhost:4000 即可查看本地博客效果 部署到 GitHub 注册 GitHub 账号GitHub 官网：https://github.com/ 创建页面仓库仓库名要和账号对应格式：yourname.github.io SSH 公钥配置如果是第一次使用此 GitHub 账号，需要配置公钥配置步骤查看文末参考博客 配置站点文件（全局 _config.yml）根目录下的全局 _config.yml 文件 123456# Deployment # 部署## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repository: https://github.com/hoxun/hoxun.github.io.git branch: master 注意： 冒号 “:” 后面有一个空格 type 值自 3.0 版本后为 git，之前为 github repository: 刚刚创建的 github 仓库地址（repo == repository） Error: Error: remote: Permission to hoxun/hoxun.github.io.git denied to ... 原因：一台电脑多个 GitHub 账号 解决：把仓库地址换为 SSH 形式的地址 1repository: git@github.com:Hoxun/Hoxun.github.io.git 更多 config 配置可查阅官方文档：https://hexo.io/docs/configuration.html Hexo 部署生成静态文件 $ hexo generate 部署到线上仓库(.deploy_git 文件夹) $ hexo deploy Error: ERROR Deployer not found: git 原因：缺少部署插件 解决：安装插件。执行以下命令$ npm install hexo-deployer-git --save重新 deploy 即可 以下提示说明部署成功： INFO Deploy done: git 访问 GitHub 博客页面点击 GitHub 上项目 Settings，下滑，在 GitHub Pages，提示： Your site is published at https://hoxun.github.io/ 在浏览器访问：https://hoxun.github.io/，即可打开线上博客 绑定独立域名 将独立域名与 GitHub Pages 的空间绑定在本地 source 文件夹下，新建一个名为 CNAME 的文件，里面写入要绑定的域名（比如 hoxun.me），重新部署。域名需要先去域名服务商购买 DNS设置在 DNSpod 平台或其他购买域名的平台进入到域名解析界面 CNAME 类型的记录值指向 GitHub 注册的仓库名（hoxun.github.io）A 类型的记录值指向的 IP 地址是 GitHub Pages 提供的 IP 查看 GitHub Pages 提供的 IP 的方法： 在命令行运行： $ ping hoxun.github.io GitHub Pages 提供的 IP 会改变，为保障独立域名的正常访问，要及时修改 DNS 解析的 IP 地址 Hexo 常用命令12345678910$ hexo help # 查看帮助$ hexo init # 初始化$ hexo new [post] &lt;fileName&gt; # 新建文章$ hexo new page &lt;fileName&gt; # 新建页面$ hexo new draft &lt;fileName&gt; # 新建草稿$ hexo publish &lt;fileName&gt; # 发表草稿（render_drafts: true || false # 是否显示草稿，config 中的配置）$ hexo generate # 生成网页文件，public 文件夹$ hexo server # 开启本地服务 http://localhost:4000$ hexo deploy # 部署到线上仓库（.deploy_git 文件夹）$ hexo clean # 清除缓存文件（db.json）和已生成的静态文件（public 文件夹） 简写 1234hexo n == hexo newhexo g == hexo generatehexo s == hexo serverhexo d == hexo deploy Another 自行替换文章中的 hoxun 为你喜欢的名字； 命令行最好使用 Node.js 或 Git 命令行，不要使用 Windows 自带的 cmd； 博客正文使用 Markdown 语法书写； 图床推荐使用 七牛云存储，有 10G 免费空间； 我使用的 NexT 主题，主题相关配置可查看官网文档，或我的另一篇博客 GitHub + Hexo + NexT 个人博客配置 Hexo Seo优化让你的博客在google搜索排名第一； 动动手指，NexT主题与Hexo更搭哦（基础篇）； 参考 手把手教你建github技术博客by hexo hexo你的博客 更换github账号后，push被旧账号阻止 Hexo 官网]]></content>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fposts%2F16107%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>Hello World</category>
+      </categories>
+      <tags>
+        <tag>Hello World</tag>
+      </tags>
+  </entry>
+</search>

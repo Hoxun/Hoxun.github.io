@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hoxun.me/"/>
-  <updated>2017-06-26T11:44:24.863Z</updated>
+  <updated>2017-06-27T11:13:23.748Z</updated>
   <id>http://hoxun.me/</id>
   
   <author>
@@ -16,11 +16,46 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>GitHub + Hexo + NexT 个人博客配置</title>
+    <link href="http://hoxun.me/posts/7070/"/>
+    <id>http://hoxun.me/posts/7070/</id>
+    <published>2017-06-27T08:39:47.000Z</published>
+    <updated>2017-06-27T11:13:23.748Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文主要记录了本站所进行的配置<br>博主使用的是 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，可以选择自己喜欢的 <a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a>，但本文配置不保证其他主题适用;</p>
+<p>文中：<br><strong>站点配置文件</strong> 是根目录下的 _config.yml 文件<br><strong>主题配置文件</strong> 是主题目录下的 _config.yml 文件</p>
+<h2 id="安装-NexT-主题"><a href="#安装-NexT-主题" class="headerlink" title="安装 NexT 主题"></a>安装 NexT 主题</h2><h3 id="下载-NexT-主题"><a href="#下载-NexT-主题" class="headerlink" title="下载 NexT 主题"></a>下载 NexT 主题</h3><p><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT 主题源码</a></p>
+<p>打开文件夹：<code>your_dir/themes</code>，在文件夹内右键，点击 <strong>Git Bash Here</strong>，调出 Git 命令行；<br>运行：</p>
+<p><code>$ git clone https://github.com/iissnan/hexo-theme-next.git</code></p>
+<h3 id="启用-NexT-主题"><a href="#启用-NexT-主题" class="headerlink" title="启用 NexT 主题"></a>启用 NexT 主题</h3><p>将下载的文件夹重命名为 NexT，修改 <strong>站点配置文件</strong> 的 theme 默认值 landscape 为 NexT</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Extensions</div><div class="line">## Plugins: https://hexo.io/plugins/</div><div class="line">## Themes: https://hexo.io/themes/</div><div class="line">theme: NexT</div></pre></td></tr></table></figure>
+<p>重启服务器（<code>$ hexo s</code>），在浏览器地址栏输入 localhost:4000 就可看到 NexT 主题应用成功</p>
+<h2 id="配置-NexT-主题"><a href="#配置-NexT-主题" class="headerlink" title="配置 NexT 主题"></a>配置 NexT 主题</h2><h3 id="主题版式"><a href="#主题版式" class="headerlink" title="主题版式"></a>主题版式</h3><p><img src="images/NexT-Schemes.png" alt="NexT-Schemes"></p>
+<p>NexT 目前提供了三种排版样式，可通过修改 <strong>主题配置文件</strong> 选择你喜欢的板式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Schemes</div><div class="line"># scheme: Muse</div><div class="line"># scheme: Mist</div><div class="line">scheme: Pisces</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文主要记录了本站所进行的配置&lt;br&gt;博主使用的是 &lt;a href=&quot;http://theme-next.iissnan.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;NexT&lt;/a&gt; 主题，可以选择自己喜欢的 &lt;a href=&quot;https://
+    
+    </summary>
+    
+    
+      <category term="GitHub" scheme="http://hoxun.me/tags/GitHub/"/>
+    
+      <category term="Hexo" scheme="http://hoxun.me/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://hoxun.me/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>GitHub + Hexo 搭建个人博客</title>
     <link href="http://hoxun.me/posts/42385/"/>
     <id>http://hoxun.me/posts/42385/</id>
     <published>2017-06-26T10:38:21.000Z</published>
-    <updated>2017-06-26T11:44:24.863Z</updated>
+    <updated>2017-06-27T08:46:05.094Z</updated>
     
     <content type="html"><![CDATA[<h1 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h1><ul>
 <li><h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><p>下载 <a href="https://git-for-windows.github.io/" target="_blank" rel="external">Git</a>，并安装</p>
@@ -57,7 +92,7 @@
 <ul>
 <li><h2 id="SSH-公钥配置"><a href="#SSH-公钥配置" class="headerlink" title="SSH 公钥配置"></a>SSH 公钥配置</h2><p>如果是第一次使用此 GitHub 账号，需要配置公钥<br>配置步骤查看文末参考博客</p>
 </li>
-<li><h2 id="配置站点-config-yml"><a href="#配置站点-config-yml" class="headerlink" title="配置站点 _config.yml"></a>配置站点 _config.yml</h2><p>根目录下的全局 _config.yml 文件</p>
+<li><h2 id="配置站点文件（全局-config-yml）"><a href="#配置站点文件（全局-config-yml）" class="headerlink" title="配置站点文件（全局 _config.yml）"></a>配置站点文件（全局 _config.yml）</h2><p>根目录下的全局 _config.yml 文件</p>
 <p><img src="images/hexo-layout.png" alt="hexo layout"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment # 部署</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/hoxun/hoxun.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
 <p><strong>注意：</strong></p>
@@ -96,14 +131,14 @@
 </li>
 </ul>
 <h1 id="绑定独立域名"><a href="#绑定独立域名" class="headerlink" title="绑定独立域名"></a>绑定独立域名</h1><ul>
-<li><h2 id="将独立域名与-GitHub-Pages-的空间绑定"><a href="#将独立域名与-GitHub-Pages-的空间绑定" class="headerlink" title="将独立域名与 GitHub Pages 的空间绑定"></a>将独立域名与 GitHub Pages 的空间绑定</h2><p>在本地 source 文件夹下，新建一个名为 CNAME 的文件，里面写入要绑定的域名（比如 hoxun.me），重新部署。</p>
+<li><h2 id="将独立域名与-GitHub-Pages-的空间绑定"><a href="#将独立域名与-GitHub-Pages-的空间绑定" class="headerlink" title="将独立域名与 GitHub Pages 的空间绑定"></a>将独立域名与 GitHub Pages 的空间绑定</h2><p>在本地 source 文件夹下，新建一个名为 CNAME 的文件，里面写入要绑定的域名（比如 hoxun.me），重新部署。<em>域名需要先去域名服务商购买</em></p>
 </li>
 <li><h2 id="DNS设置"><a href="#DNS设置" class="headerlink" title="DNS设置"></a>DNS设置</h2><p>在 DNSpod 平台或其他购买域名的平台进入到域名解析界面</p>
 <p><img src="images/dns-setting.png" alt="DNS Setting"></p>
 <p>CNAME 类型的记录值指向 GitHub 注册的仓库名（hoxun.github.io）<br>A 类型的记录值指向的 IP 地址是 GitHub Pages 提供的 IP</p>
 <p><strong>查看 GitHub Pages 提供的 IP 的方法：</strong></p>
 <p>在命令行运行：</p>
-<p><code>ping hoxun.github.io</code></p>
+<p><code>$ ping hoxun.github.io</code></p>
 <p><em>GitHub Pages 提供的 IP 会改变，为保障独立域名的正常访问，要及时修改 DNS 解析的 IP 地址</em></p>
 </li>
 </ul>
@@ -116,7 +151,7 @@
 <li>命令行最好使用 Node.js 或 Git 命令行，不要使用 Windows 自带的 cmd；</li>
 <li>博客正文使用 <a href="http://www.markdown.cn/" target="_blank" rel="external">Markdown</a> 语法书写；</li>
 <li>图床推荐使用 <a href="https://portal.qiniu.com/create" target="_blank" rel="external">七牛云存储</a>，有 10G 免费空间；</li>
-<li>我使用的 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，主题相关配置可查看官网文档</li>
+<li>我使用的 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，主题相关配置可查看官网文档，或我的另一篇博客 <a href="http://hoxun.me/posts/7070/">GitHub + Hexo + NexT 个人博客配置</a></li>
 <li><a href="http://www.jianshu.com/p/86557c34b671" target="_blank" rel="external">Hexo Seo优化让你的博客在google搜索排名第一</a>；</li>
 <li><a href="http://www.arao.me/2015/hexo-next-theme-optimize-base/#hexo_NexT主题首页title的优化" target="_blank" rel="external">动动手指，NexT主题与Hexo更搭哦（基础篇）</a>；</li>
 </ol>
@@ -135,6 +170,10 @@
     
     </summary>
     
+    
+      <category term="GitHub" scheme="http://hoxun.me/tags/GitHub/"/>
+    
+      <category term="Hexo" scheme="http://hoxun.me/tags/Hexo/"/>
     
   </entry>
   

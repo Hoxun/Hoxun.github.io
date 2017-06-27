@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://hoxun.me/posts/7070/</loc>
+    <lastmod>2017-06-27T11:13:23.748Z</lastmod>
+    <data>
+        <display>
+        <title>GitHub + Hexo + NexT 个人博客配置</title>
+        <pubTime>2017-06-27T08:39:47.000Z</pubTime>
+        
+        <tag>GitHub</tag>
+         
+        <tag>Hexo</tag>
+         
+        <tag>NexT</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://hoxun.me/posts/42385/</loc>
+    <lastmod>2017-06-27T08:46:05.094Z</lastmod>
+    <data>
+        <display>
+        <title>GitHub + Hexo 搭建个人博客</title>
+        <pubTime>2017-06-26T10:38:21.000Z</pubTime>
+        
+        <tag>GitHub</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://hoxun.me/posts/16107/</loc>
     <lastmod>2017-06-26T15:48:02.059Z</lastmod>
     <data>
@@ -18,21 +58,6 @@
              
               <breadCrumb title="Hello World" url="http://hoxun.me/categories/Hello-World/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://hoxun.me/posts/42385/</loc>
-    <lastmod>2017-06-26T11:44:24.863Z</lastmod>
-    <data>
-        <display>
-        <title>GitHub + Hexo 搭建个人博客</title>
-        <pubTime>2017-06-26T10:38:21.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
