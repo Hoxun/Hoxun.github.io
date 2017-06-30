@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hoxun.me/"/>
-  <updated>2017-06-30T10:23:51.670Z</updated>
+  <updated>2017-06-30T11:07:02.306Z</updated>
   <id>http://hoxun.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://hoxun.me/posts/7070/"/>
     <id>http://hoxun.me/posts/7070/</id>
     <published>2017-06-27T08:39:47.000Z</published>
-    <updated>2017-06-30T10:23:51.670Z</updated>
+    <updated>2017-06-30T11:07:02.306Z</updated>
     
     <content type="html"><![CDATA[<p>本文主要记录了本站所进行的配置<br>博主使用的是 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，可以选择自己喜欢的 <a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a>，其他主题的配置应该类似，但本文配置不保证其他主题适用;</p>
 <p>文中：<br><strong>站点配置文件</strong> 是根目录下的 _config.yml 文件。每次修改 <strong>站点配置文件</strong>，需重启才能生效<br><strong>主题配置文件</strong> 是主题目录下的 _config.yml 文件</p>
@@ -108,7 +108,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">crc16 &amp; hex</div><div class="line">https://post.zz173.com/posts/66c8.html</div><div class="line"></div><div class="line">crc16 &amp; dec</div><div class="line">https://post.zz173.com/posts/65535.html</div><div class="line"></div><div class="line">crc32 &amp; hex</div><div class="line">https://post.zz173.com/posts/8ddf18fb.html</div><div class="line"></div><div class="line">crc32 &amp; dec</div><div class="line">https://post.zz173.com/posts/1690090958.html</div></pre></td></tr></table></figure>
 <p>crc16的最大帖子数是 65535，对于个人博客应该够用了。。。吧；</p>
 <p>重启服务器 <code>$ hexo s</code></p>
-<p>搜索引擎收录及优化，可查看文末参考博客。</p>
+<h3 id="搜索引擎收录"><a href="#搜索引擎收录" class="headerlink" title="搜索引擎收录"></a>搜索引擎收录</h3><p>搜索引擎收录及优化，可查看 <a href="http://www.jianshu.com/p/86557c34b671" target="_blank" rel="external">Hexo Seo优化让你的博客在google搜索排名第一</a>，或其他文末参考博客。</p>
+<p>谷歌、百度验证文件，放在 <code>your_dir/themes/NexT/source</code> 文件夹下，部署时不会被编译</p>
 <h2 id="Another"><a href="#Another" class="headerlink" title="Another"></a>Another</h2><ol>
 <li>命令行最好使用 Node.js 或 Git 命令行，不要使用 Windows 自带的 cmd；以 git 开头的命令必须使用 Git 命令行 –&gt; <strong>Git Bash Here</strong></li>
 <li>每次修改 <strong>站点配置文件</strong> 后，需重启服务器 <code>hexo s</code> 才能生效</li>
