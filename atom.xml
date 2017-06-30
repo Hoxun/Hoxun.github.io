@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hoxun.me/"/>
-  <updated>2017-06-29T07:49:31.324Z</updated>
+  <updated>2017-06-30T10:23:51.670Z</updated>
   <id>http://hoxun.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://hoxun.me/posts/7070/"/>
     <id>http://hoxun.me/posts/7070/</id>
     <published>2017-06-27T08:39:47.000Z</published>
-    <updated>2017-06-29T07:49:31.324Z</updated>
+    <updated>2017-06-30T10:23:51.670Z</updated>
     
     <content type="html"><![CDATA[<p>本文主要记录了本站所进行的配置<br>博主使用的是 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，可以选择自己喜欢的 <a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a>，其他主题的配置应该类似，但本文配置不保证其他主题适用;</p>
 <p>文中：<br><strong>站点配置文件</strong> 是根目录下的 _config.yml 文件。每次修改 <strong>站点配置文件</strong>，需重启才能生效<br><strong>主题配置文件</strong> 是主题目录下的 _config.yml 文件</p>
@@ -108,7 +108,27 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">crc16 &amp; hex</div><div class="line">https://post.zz173.com/posts/66c8.html</div><div class="line"></div><div class="line">crc16 &amp; dec</div><div class="line">https://post.zz173.com/posts/65535.html</div><div class="line"></div><div class="line">crc32 &amp; hex</div><div class="line">https://post.zz173.com/posts/8ddf18fb.html</div><div class="line"></div><div class="line">crc32 &amp; dec</div><div class="line">https://post.zz173.com/posts/1690090958.html</div></pre></td></tr></table></figure>
 <p>crc16的最大帖子数是 65535，对于个人博客应该够用了。。。吧；</p>
 <p>重启服务器 <code>$ hexo s</code></p>
-<h2 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h2><p><a href="http://blog.tangxiaozhu.com/p/45374067/" target="_blank" rel="external">使用 Hexo 搭建博客的深度优化与定制</a><br><a href="https://post.zz173.com/detail/hexo-abbrlink.html" target="_blank" rel="external">hexo-abbrlink介绍</a><br><a href="https://xuanwo.org/2014/08/14/hexo-usual-problem/" target="_blank" rel="external">Hexo常见问题解决方案</a></p>
+<p>搜索引擎收录及优化，可查看文末参考博客。</p>
+<h2 id="Another"><a href="#Another" class="headerlink" title="Another"></a>Another</h2><ol>
+<li>命令行最好使用 Node.js 或 Git 命令行，不要使用 Windows 自带的 cmd；以 git 开头的命令必须使用 Git 命令行 –&gt; <strong>Git Bash Here</strong></li>
+<li>每次修改 <strong>站点配置文件</strong> 后，需重启服务器 <code>hexo s</code> 才能生效</li>
+<li>博客正文使用 <a href="http://www.markdown.cn/" target="_blank" rel="external">Markdown</a> 语法书写；</li>
+<li>图床推荐使用 <a href="https://portal.qiniu.com/create" target="_blank" rel="external">七牛云存储</a>，有 10G 免费空间；</li>
+<li>更多主题配置推荐查看 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 官方文档，官网写的很详细。</li>
+<li>更多个性化的配置可参考 <a href="http://www.ookamiantd.top/2017/build-blog-hexo-advanced/" target="_blank" rel="external">基于Hexo搭建个人博客——进阶篇(从入门到入土)</a></li>
+</ol>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="http://www.ookamiantd.top/2017/build-blog-hexo-advanced/" target="_blank" rel="external">基于Hexo搭建个人博客——进阶篇(从入门到入土)</a></li>
+<li><a href="http://wanzhiyu.tk/2017/01/20/%E6%95%99%E7%A8%8B/Hexo/Hexo-Next%E7%9A%84%E8%83%8C%E6%99%AF%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E5%92%8C%E5%BF%83%E5%BF%83/" target="_blank" rel="external">Hexo-Next的背景动态效果和心心</a></li>
+<li><a href="http://blog.tangxiaozhu.com/p/45374067/" target="_blank" rel="external">使用 Hexo 搭建博客的深度优化与定制</a></li>
+<li><a href="https://post.zz173.com/detail/hexo-abbrlink.html" target="_blank" rel="external">hexo-abbrlink介绍</a></li>
+<li><a href="http://www.jianshu.com/p/86557c34b671" target="_blank" rel="external">Hexo Seo优化让你的博客在google搜索排名第一</a></li>
+<li><a href="http://blog.junyu.io/posts/0008-blog-seo.html" target="_blank" rel="external">让更多人看到你的博客</a></li>
+<li><a href="http://www.shellsec.com/news/34054.html" target="_blank" rel="external">github+hexo提交到百度谷歌搜索引擎</a></li>
+<li><a href="https://xuanwo.org/2014/08/14/hexo-usual-problem/" target="_blank" rel="external">Hexo常见问题解决方案</a></li>
+<li><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo 官网</a></li>
+<li><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT 官网</a></li>
+</ul>
 ]]></content>
     
     <summary type="html">
@@ -133,7 +153,7 @@
     <link href="http://hoxun.me/posts/42385/"/>
     <id>http://hoxun.me/posts/42385/</id>
     <published>2017-06-26T10:38:21.000Z</published>
-    <updated>2017-06-29T02:59:39.349Z</updated>
+    <updated>2017-06-30T10:10:45.455Z</updated>
     
     <content type="html"><![CDATA[<h1 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h1><ul>
 <li><h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><p>下载 <a href="https://git-for-windows.github.io/" target="_blank" rel="external">Git</a>，并安装</p>
@@ -228,12 +248,11 @@
 <li>自行替换文章中的 <strong>hoxun</strong> 为你喜欢的名字；</li>
 <li>命令行最好使用 Node.js 或 Git 命令行，不要使用 Windows 自带的 cmd；</li>
 <li>博客正文使用 <a href="http://www.markdown.cn/" target="_blank" rel="external">Markdown</a> 语法书写；</li>
-<li>图床推荐使用 <a href="https://portal.qiniu.com/create" target="_blank" rel="external">七牛云存储</a>，有 10G 免费空间；</li>
-<li>我使用的 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，主题相关配置可查看官网文档，或我的另一篇博客 <a href="http://hoxun.me/posts/7070/">GitHub + Hexo + NexT 个人博客配置</a></li>
+<li>我使用的 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，主题相关配置可查看官网文档。或我的另一篇博客 <a href="http://hoxun.me/posts/7070/">GitHub + Hexo + NexT 个人博客配置</a>，主要记录了我所进行的一些配置</li>
 <li><a href="http://www.jianshu.com/p/86557c34b671" target="_blank" rel="external">Hexo Seo优化让你的博客在google搜索排名第一</a>；</li>
 <li><a href="http://www.arao.me/2015/hexo-next-theme-optimize-base/#hexo_NexT主题首页title的优化" target="_blank" rel="external">动动手指，NexT主题与Hexo更搭哦（基础篇）</a>；</li>
 </ol>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
 <li><a href="http://wuxiaolong.me/2015/07/31/build-blog-by-hexo/" target="_blank" rel="external">手把手教你建github技术博客by hexo</a></li>
 <li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">hexo你的博客</a></li>
 <li><a href="http://www.cnblogs.com/liyan-web/p/5829268.html" target="_blank" rel="external">更换github账号后，push被旧账号阻止</a></li>
