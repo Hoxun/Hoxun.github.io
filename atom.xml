@@ -4,9 +4,9 @@
   <subtitle>前端笔记</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://hoxun.me/"/>
+  <link href="http://www.hoxun.me/"/>
   <updated>2017-06-30T11:07:02.306Z</updated>
-  <id>http://hoxun.me/</id>
+  <id>http://www.hoxun.me/</id>
   
   <author>
     <name>Ho.xun</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>GitHub + Hexo + NexT 个人博客配置</title>
-    <link href="http://hoxun.me/posts/7070/"/>
-    <id>http://hoxun.me/posts/7070/</id>
+    <link href="http://www.hoxun.me/posts/7070/"/>
+    <id>http://www.hoxun.me/posts/7070/</id>
     <published>2017-06-27T08:39:47.000Z</published>
     <updated>2017-06-30T11:07:02.306Z</updated>
     
@@ -138,21 +138,21 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://hoxun.me/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://www.hoxun.me/categories/Hexo/"/>
     
     
-      <category term="GitHub" scheme="http://hoxun.me/tags/GitHub/"/>
+      <category term="GitHub" scheme="http://www.hoxun.me/tags/GitHub/"/>
     
-      <category term="Hexo" scheme="http://hoxun.me/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://www.hoxun.me/tags/Hexo/"/>
     
-      <category term="NexT" scheme="http://hoxun.me/tags/NexT/"/>
+      <category term="NexT" scheme="http://www.hoxun.me/tags/NexT/"/>
     
   </entry>
   
   <entry>
     <title>GitHub + Hexo 搭建个人博客</title>
-    <link href="http://hoxun.me/posts/42385/"/>
-    <id>http://hoxun.me/posts/42385/</id>
+    <link href="http://www.hoxun.me/posts/42385/"/>
+    <id>http://www.hoxun.me/posts/42385/</id>
     <published>2017-06-26T10:38:21.000Z</published>
     <updated>2017-06-30T10:10:45.455Z</updated>
     
@@ -249,7 +249,7 @@
 <li>自行替换文章中的 <strong>hoxun</strong> 为你喜欢的名字；</li>
 <li>命令行最好使用 Node.js 或 Git 命令行，不要使用 Windows 自带的 cmd；</li>
 <li>博客正文使用 <a href="http://www.markdown.cn/" target="_blank" rel="external">Markdown</a> 语法书写；</li>
-<li>我使用的 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，主题相关配置可查看官网文档。或我的另一篇博客 <a href="http://hoxun.me/posts/7070/">GitHub + Hexo + NexT 个人博客配置</a>，主要记录了我所进行的一些配置</li>
+<li>我使用的 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，主题相关配置可查看官网文档。或我的另一篇博客 <a href="http://hoxun.me/posts/7070/" target="_blank" rel="external">GitHub + Hexo + NexT 个人博客配置</a>，主要记录了我所进行的一些配置</li>
 <li><a href="http://www.jianshu.com/p/86557c34b671" target="_blank" rel="external">Hexo Seo优化让你的博客在google搜索排名第一</a>；</li>
 <li><a href="http://www.arao.me/2015/hexo-next-theme-optimize-base/#hexo_NexT主题首页title的优化" target="_blank" rel="external">动动手指，NexT主题与Hexo更搭哦（基础篇）</a>；</li>
 </ol>
@@ -268,19 +268,19 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://hoxun.me/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://www.hoxun.me/categories/Hexo/"/>
     
     
-      <category term="GitHub" scheme="http://hoxun.me/tags/GitHub/"/>
+      <category term="GitHub" scheme="http://www.hoxun.me/tags/GitHub/"/>
     
-      <category term="Hexo" scheme="http://hoxun.me/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://www.hoxun.me/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://hoxun.me/posts/16107/"/>
-    <id>http://hoxun.me/posts/16107/</id>
+    <link href="http://www.hoxun.me/posts/16107/"/>
+    <id>http://www.hoxun.me/posts/16107/</id>
     <published>2017-06-26T08:03:13.428Z</published>
     <updated>2017-06-29T02:59:59.409Z</updated>
     
@@ -301,10 +301,10 @@
     
     </summary>
     
-      <category term="Hello World" scheme="http://hoxun.me/categories/Hello-World/"/>
+      <category term="Hello World" scheme="http://www.hoxun.me/categories/Hello-World/"/>
     
     
-      <category term="Hello World" scheme="http://hoxun.me/tags/Hello-World/"/>
+      <category term="Hello World" scheme="http://www.hoxun.me/tags/Hello-World/"/>
     
   </entry>
   
