@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hoxun.me/"/>
-  <updated>2017-06-30T11:07:02.306Z</updated>
+  <updated>2017-07-11T07:07:25.034Z</updated>
   <id>http://hoxun.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://hoxun.me/posts/7070/"/>
     <id>http://hoxun.me/posts/7070/</id>
     <published>2017-06-27T08:39:47.000Z</published>
-    <updated>2017-06-30T11:07:02.306Z</updated>
+    <updated>2017-07-11T07:07:25.034Z</updated>
     
     <content type="html"><![CDATA[<p>本文主要记录了本站所进行的配置<br>博主使用的是 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，可以选择自己喜欢的 <a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a>，其他主题的配置应该类似，但本文配置不保证其他主题适用;</p>
 <p>文中：<br><strong>站点配置文件</strong> 是根目录下的 _config.yml 文件。每次修改 <strong>站点配置文件</strong>，需重启才能生效<br><strong>主题配置文件</strong> 是主题目录下的 _config.yml 文件</p>
@@ -65,7 +65,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">false：禁用 RSS，不在页面上显示 RSS 连接。</div><div class="line">留空：使用 Hexo 生成的 Feed 链接。 你可以需要先安装 hexo-generator-feed 插件。</div><div class="line">具体的链接地址：适用于已经烧制过 Feed 的情形。</div></pre></td></tr></table></figure>
 <hr>
 <h2 id="第三方服务"><a href="#第三方服务" class="headerlink" title="第三方服务"></a>第三方服务</h2><h3 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h3><p>NexT 支持多款评论系统</p>
-<p><a href="https://disqus.com/" target="_blank" rel="external">DISQUS</a> 正常情况下国内不能访问，“多说”已经关闭。<br><a href="http://changyan.kuaizhan.com/" target="_blank" rel="external">畅言</a> 、<a href="http://www.uyan.cc/" target="_blank" rel="external">友言</a> 也不错，NexT 也已集成。<br>博主用的 <a href="https://gentie.163.com/index.html" target="_blank" rel="external">网易云跟帖</a> </p>
+<p><a href="https://disqus.com/" target="_blank" rel="external">DISQUS</a> 正常情况下国内不能访问，“多说”已经关闭，<a href="https://gentie.163.com/index.html" target="_blank" rel="external">网易云跟帖</a> 也即将关闭；<br><a href="http://changyan.kuaizhan.com/" target="_blank" rel="external">畅言</a> 也不错，NexT 也已集成；<br>博主用的 <a href="http://www.uyan.cc/" target="_blank" rel="external">友言</a> </p>
 <p>各评论系统集成步骤基本类似：</p>
 <ol>
 <li>注册账号</li>
@@ -76,7 +76,7 @@
 <p>用什么评论系统修改 <strong>主题配置文件</strong> 中对应代码</p>
 <p><strong>Disqus</strong><br>填写站点信息时，Website Name 项填写 Disqus 唯一标示名 <code>shortname</code>（貌似要和 GitHub 名对应）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># Disqus</div><div class="line">disqus:</div><div class="line">  enable: false</div><div class="line">  shortname:</div><div class="line">  count: true</div></pre></td></tr></table></figure>
-<p><strong>网易云跟帖</strong><br>填写站点信息时，站点网址不能填写 GitHub 域名，要填写你购买的域名<br>网易云跟帖本地测试需要做些配置。具体可查看 <a href="http://theme-next.iissnan.com/third-party-services.html#yungentie" target="_blank" rel="external">网易云跟帖本地测试</a><br><del>博主没有在本地测试</del></p>
+<p><strong>网易云跟帖</strong> （将于 2017 年 8 月 1 日停止服务）<br>填写站点信息时，站点网址不能填写 GitHub 域名，要填写你购买的域名<br>网易云跟帖本地测试需要做些配置。具体可查看 <a href="http://theme-next.iissnan.com/third-party-services.html#yungentie" target="_blank" rel="external">网易云跟帖本地测试</a><br><del>博主没有在本地测试</del></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Gentie productKey</div><div class="line">gentie_productKey:</div></pre></td></tr></table></figure>
 <p><strong>畅言</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># changyan</div><div class="line">changyan:</div><div class="line">  enable: false</div><div class="line">  appid:</div><div class="line">  appkey:</div></pre></td></tr></table></figure>
@@ -249,7 +249,7 @@
 <li>自行替换文章中的 <strong>hoxun</strong> 为你喜欢的名字；</li>
 <li>命令行最好使用 Node.js 或 Git 命令行，不要使用 Windows 自带的 cmd；</li>
 <li>博客正文使用 <a href="http://www.markdown.cn/" target="_blank" rel="external">Markdown</a> 语法书写；</li>
-<li>我使用的 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，主题相关配置可查看官网文档。或我的另一篇博客 <a href="http://hoxun.me/posts/7070/" target="_blank" rel="external">GitHub + Hexo + NexT 个人博客配置</a>，主要记录了我所进行的一些配置</li>
+<li>我使用的 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 主题，主题相关配置可查看官网文档。或我的另一篇博客 <a href="http://hoxun.me/posts/7070/">GitHub + Hexo + NexT 个人博客配置</a>，主要记录了我所进行的一些配置</li>
 <li><a href="http://www.jianshu.com/p/86557c34b671" target="_blank" rel="external">Hexo Seo优化让你的博客在google搜索排名第一</a>；</li>
 <li><a href="http://www.arao.me/2015/hexo-next-theme-optimize-base/#hexo_NexT主题首页title的优化" target="_blank" rel="external">动动手指，NexT主题与Hexo更搭哦（基础篇）</a>；</li>
 </ol>
